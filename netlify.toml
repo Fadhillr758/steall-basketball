@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build && cp public/netlify-static/index.html public/build/index.html"
+  publish = "public/build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
